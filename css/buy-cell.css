@@ -1,0 +1,223 @@
+.buy-sell-search-box span {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 0 56px 56px 0;
+  padding: 10px 25px !important;
+  font-size: 21px;
+  /* background-color: #d9d9d9; */
+
+  background: #05448d;
+}
+.buy-sell-search-box input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 52px;
+}
+
+.buy-sell-slider .slick-list {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.main-slider img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  max-height: 100%;
+  border-radius: 15px;
+}
+.thumbnail-slider img {
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 15px;
+  max-height: 100%;
+}
+
+.form-step {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+button {
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #66aef1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.vehicles-title {
+  max-width: 100%;
+  width: 167px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 7px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.vehicles-title:focus {
+  background-color: #05448d;
+  color: white;
+}
+
+.car-type::before,
+#used-car-new::before,
+#used-car-reconditioned::before,
+#used-car::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popular-vehicles-type li {
+  line-height: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.popular-vehicles-type li:hover {
+  padding-left: 5px !important;
+}
+
+.year-picker {
+  position: relative;
+}
+
+.input-fields,
+.year-picker input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.year-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1; /* Ensure the dropdown is above other elements */
+}
+
+.year-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.year-list li:hover {
+  background-color: #f0f0f0;
+}
+
+/* fuel types */
+.fuel-types {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.checkbox {
+  margin-right: 5px;
+}
+
+label {
+  font-size: 16px;
+}
+
+/* Optional: Add some styling for better visibility when hovering over checkboxes */
+.checkbox:hover {
+  cursor: pointer;
+}
+
+.checkbox:checked + label {
+  font-weight: bold;
+  color: #1e90ff; /* Change color to your preference */
+}
+
+div#myAccordion2,
+div#myAccordion {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 5 !important;
+}
+
+#myAccordion.show,
+#myAccordion2.show {
+  visibility: visible !important;
+  display: block !important;
+  opacity: 1 !important;
+  margin: 10px 0;
+  z-index: 5;
+  position: relative;
+}
+
+span.select2-selection.select2-selection--multiple {
+  padding: 11px;
+}
+
+.select2-container--default.select2-container--focus
+  .select2-selection--multiple {
+  /* border: solid black 1px; */
+  outline: 0;
+  border: none;
+  border-left: 1px solid red;
+  border-radius: 0 !important;
+}
+
+.select2-container--default.select2-container--focus
+  .select2-selection--multiple {
+  border: solid transparent 1px;
+  outline: 0;
+  border-radius: 0;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid transparent;
+}
+
+.labelRegistrationYear {
+  border-right: 1px solid #05448d;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+  border: none;
+  margin: 0 !important;
+  margin-left: 5px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

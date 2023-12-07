@@ -1,0 +1,874 @@
+/*
+  Theme Name: Default :
+  Author: 
+  Support: fl.rakibul@gmail.com
+  Description: This template is stack and coding style fully handle.
+  Version: 1.0.0
+*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+/*
+* font linking google font or others fonts
+*/
+
+/* -------------------------------------------------------------------------- */
+
+/* Google fonts calling */
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* -------------------------------------------------------------------------- */
+@import url("css/font-awesome.css");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+/* login page style */
+.login {
+  background-color: #fff;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.login-top-banner {
+  border-radius: 0 0 20px 20px;
+  background-color: #05448d;
+}
+.login-details {
+  margin-top: 5px;
+}
+
+.login-details input {
+  border: 1px solid #ddd;
+}
+.login-details input:focus {
+  background-color: rgba(5, 68, 141, 0.04);
+}
+
+.login-article h2 {
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: -2px;
+}
+
+.login-btn {
+  background: #ddd;
+  cursor: pointer !important;
+  padding: 11px;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+}
+
+.login-btn:hover {
+  background-color: #cfcfcf;
+}
+
+.login-details .back-btn span {
+  /* width: 50px;
+  height: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #929292;
+  border-radius: 100%;
+  color: #929292;
+  transition: 0.3s; */
+
+  color: #00ccff;
+}
+
+.login-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100% !important;
+  background: #ddd;
+  width: 50px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot-password {
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.back-btn {
+  /* height: 50px; */
+  cursor: pointer !important;
+}
+
+/* .back-btn:hover {
+  color: #333 !important;
+} */
+
+/* OTP style */
+/* otp fields */
+
+.login-article p {
+  color: #333;
+}
+.cancel-trip-time p,
+.trip-history-article p {
+  margin: 0;
+  padding: 0;
+  list-style: 24px;
+  color: #333;
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+.otp-fields {
+  max-width: 100%;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.otp-time a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* customer history */
+/* customer profile image */
+
+.customer-profile img {
+  max-width: 100%;
+  width: 50px;
+}
+
+.customer-profile span {
+  font-weight: 200;
+  font-size: 15px;
+}
+
+/* .top-banner-pointer {
+  cursor: pointer;
+} */
+
+.history-details .history-icon i {
+  font-size: 16px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 10px;
+}
+.history-details {
+  width: 100%;
+}
+
+.history-details h4 {
+  font-size: 16px;
+}
+
+.history-details-box {
+  cursor: pointer;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  cursor: pointer !important;
+  transition: 0.3s;
+}
+
+.history-details-box:hover {
+  background-color: #ddd;
+  margin-left: 3px;
+  border-radius: 5px;
+}
+
+/* package-rent */
+.package-rent-wrap {
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #ddd;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.package-rent-wrap:hover {
+  margin-left: 3px;
+}
+
+.package-rent img {
+  max-width: 100%;
+  width: 100px;
+}
+
+/* .package-rent-article {
+  margin-left: 15px;
+} */
+
+.package-rent-article h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* package-rent-car */
+
+.package-rent-car img {
+  max-width: 100%;
+  width: 120px;
+  margin-right: 10px;
+}
+
+.package-rent-car h4 {
+  font-size: 18px;
+}
+
+.car-edit-info {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ddd;
+  cursor: pointer !important;
+  padding: 15px;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.car-edit-info:hover {
+  background-color: #cfcfcf;
+  cursor: pointer;
+}
+
+.user-info-text p strong {
+  margin-right: 10px;
+}
+
+.day-booking-image img {
+  max-width: 100%;
+  width: 133px;
+  cursor: pointer;
+}
+
+.car-text-left-space {
+  margin-right: 10px;
+}
+.fuels h6 {
+  font-weight: 600;
+}
+
+.fuels p {
+  margin-left: 20px;
+  line-height: 10px;
+  margin-bottom: 10px;
+}
+
+.booking-day-wrap p {
+  line-height: 10px;
+  font-size: 13px;
+}
+
+.fuels li {
+  margin-left: 30px;
+}
+
+.booking-day-wrap i {
+  margin-right: 9px;
+}
+
+/* car service */
+.car-service-box {
+  padding: 15px;
+  cursor: pointer;
+  z-index: -5;
+}
+.car-service-box-border img,
+.car-service-box img {
+  width: 70px;
+}
+
+/* car-service-box-border css animation border */
+.car-border-animation {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+.car-border-animation::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(transparent, transparent);
+  animation: animate 1.5s linear infinite;
+  width: 120%;
+  height: 50%;
+  left: -29px;
+  right: 0;
+  top: 27%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.car-border-animation::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  inset: 4px;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.car-border-animation:hover::before {
+  background: linear-gradient(#00ccff, #d400d4);
+}
+
+.car-service-box-border {
+  padding: 15px;
+  margin-top: 23px;
+  cursor: pointer;
+}
+.post-box .post-box-items {
+  border-radius: 20px;
+}
+
+/* .post-box-items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 15px;
+} */
+
+.post-box .post-box-items,
+.post-box .post-box-items img {
+  border-radius: 15px;
+}
+
+.post-box .post-box-items:hover::before {
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.blog-hover-article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blog-hover-article p {
+  width: 0px;
+  height: 0px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  color: #fff;
+  padding: 10px;
+}
+
+.post-box-items h6 {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.blog-images-title {
+  font-size: 1vw !important;
+  padding: 5px;
+}
+
+.post-box .post-box-items:hover .blog-hover-article p {
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.post-area h2 {
+  font-size: 21px;
+  padding: 15px 0;
+}
+
+/* Supplier */
+
+.coming-bid-btn {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  background-color: #ff0000;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-btn-color {
+  background-color: rgb(147, 250, 250);
+}
+
+.coming-btn-color:hover {
+  background-color: rgb(117, 245, 245);
+}
+
+article ol li {
+  cursor: pointer;
+}
+.login-top-banner img {
+  max-width: 100%;
+  width: 55px;
+  margin-right: 10px;
+}
+
+/* time count down style */
+.time-over .time-hours span,
+.time-over .time-minutes span,
+.time-over .time-second span {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #696969;
+  display: inline-block;
+  font-size: 22px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 3px;
+  color: #696969;
+}
+.time-over .time-second,
+.time-over .time-minutes,
+.time-over .time-hours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-over small {
+  color: #696969;
+}
+
+.offer-details p {
+  /* margin-top: -12px; */
+  /* border-bottom: 1px solid #dadada; */
+  /* padding: 10px 0; */
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.offer-details p i {
+  color: gray;
+}
+
+.offer-details p strong {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+/* car article */
+article.car-article li {
+  list-style: none;
+}
+
+article.car-article li i {
+  margin-right: 7px;
+  font-size: 14px;
+}
+
+article.car-article li strong {
+  margin-right: 10px;
+}
+
+.car-details-round {
+  border-radius: 5px;
+}
+.map iframe {
+  border-radius: 5px 5px 0 0;
+}
+
+/* tabs history */
+.tabs-history-list {
+  cursor: pointer;
+}
+.tabs-history-list h5 {
+  font-size: 15px !important;
+  margin: 3px 0;
+  padding: 0;
+}
+
+.tabs-history-list p {
+  font-size: 14px;
+}
+
+.tabs-history-list small {
+  font-size: 12px !important;
+  display: inline-block;
+}
+
+/* login icon style */
+.other-login-btn img {
+  width: 20px;
+}
+
+.other-login-btn span {
+  margin-left: 10px;
+}
+.other-login-btn a {
+  text-decoration: none;
+}
+
+/* ===================================== */
+
+/* reset.css - line no: 137 */
+/* .menu-overly {
+  opacity: 0;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  width: 576px;
+  visibility: hidden;
+} */
+
+/* reset.css - line no: 145 */
+/* .menu-overly-add { */
+/* width: 100%; */
+/* height: 100%;
+  background: #000;
+  z-index: 5;
+  position: fixed;
+  opacity: 0.5;
+  visibility: visible;
+  left: 0;
+  right: 0;
+  width: 576px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* Hamburger.css - line no: 59 */
+/* .hamburger-trigger {
+  left: 0 !important;
+  transform: translateX(0px);
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+  overflow-y: scroll;
+} */
+
+/* Hamburger.css - line no: 27 */
+/* .off-canvas-menu {
+  position: absolute !important;
+  top: 0;
+  left: -99px;
+  width: 75%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 75%);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  transform: translateX(0);
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 6;
+  height: 100%;
+  position: relative;
+  left: 0;
+  transform: translateX(-20px); */
+/* opacity: 1; */
+/* visibility: visible; */
+/* z-index: 9999; */
+/* overflow-y: auto; */
+/* border: 1px solid #000; */
+/* padding: 10px; */
+/* height: 100vh;
+} */
+
+.divider-wrap .form-switch .form-check-input {
+  margin-left: 1em;
+}
+
+.divider-wrap .form-switch {
+  padding-left: 0em;
+}
+
+.login-icons-size i {
+  font-size: 12px;
+}
+
+.login-icons-size {
+  width: 40px;
+}
+
+.divider-wrap .form-check-input {
+  width: 4em !important;
+  height: 1.5em;
+}
+
+.divider-wrap .form-switch .form-check-input {
+  margin-left: 1em;
+}
+
+.divider-wrap .form-switch {
+  padding-left: 0em;
+}
+
+.divider-wrap .form-check-input {
+  position: static;
+  margin-top: 0;
+  margin-left: -1.25rem;
+}
+
+.divider-wrap label {
+  margin-bottom: 0;
+}
+
+.login-icon-map-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100% !important;
+  background: #ddd;
+  width: 50px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-icons-size i {
+  font-size: 17px;
+}
+
+.package-rent-edit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.package-rent-edit-btn span {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #ddd;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #696969;
+  font-size: 15px;
+}
+
+.package-rent-checkbox img {
+  width: 20px;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.package-rent-user-data p,
+.package-rent-user-data li {
+  font-size: 15px;
+}
+
+.package-rent-user-data li strong {
+  font-size: 15px !important;
+}
+.package-rent-user-data h5 {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+/* package rent checkbox */
+.package-rent-checkbox {
+  border-radius: 100% !important;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+}
+
+/* ==========================================================================*/
+/*                          Iphone 1 page styling
+/*========================================================================== */
+
+.success-message-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pad: 5px;
+}
+
+.success-message-icon i {
+  font-size: 18px;
+}
+
+/* ==========================================================================*/
+/*                          Driver 2 page styling
+/*========================================================================== */
+
+/* span.select2-selection.select2-selection--single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99c8ff;
+  border: none;
+  color: red;
+  height: 40px;
+  max-height: 100%;
+}
+
+span.select2-selection__arrow {
+  position: relative !important;
+  width: 20px;
+  height: 20px !important;
+  border: 1px solid #000;
+  border-radius: 100%;
+  color: #fff !important;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__placeholder {
+  color: #000;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  border-color: #000 transparent transparent;
+}
+
+.select2-container--default.select2-container--open
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  border-color: transparent transparent #000 transparent;
+} */
+/* ==========================================================================*/
+/*                          Iphone 2 page styling
+/*========================================================================== */
+.car-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 0px;
+}
+
+.car-image-gallery img {
+  width: 61px;
+  height: 61px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.iphone-two-terms-conditions {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 1px solid #66aef1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pad: 5px;
+  background-color: #66aef1;
+}
+
+.iphone-two-terms-conditions i {
+  font-size: 10px;
+}
+
+.iphone-two-day-booking-details-border {
+  position: relative;
+  width: 2px;
+  height: 50px;
+  background: #000;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* ==========================================================================*/
+/*                          Iphone 3 page styling
+  /*========================================================================== */
+.iphone-three-btn {
+  cursor: pointer;
+}
+.iphone-three-btn span {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+/* content */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.content3 {
+  grid-column: span 2;
+  background-color: #d9d9d9;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.content1,
+.content2 {
+  background-color: #d9d9d9;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.iphone-cross-icon {
+  position: absolute;
+  top: -19px;
+  right: -26px;
+}

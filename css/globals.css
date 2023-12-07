@@ -1,0 +1,156 @@
+.mutho-car-bg-primary {
+  background: #05448d;
+}
+
+.mutho-car-bg-secondary {
+  background-color: #79a0ff;
+}
+
+.mutho-car-bg-orange {
+  background: #ff9245;
+}
+
+.mutho-car-bg-light {
+  background-color: #f9f9fb;
+}
+
+.mutho-car-bg-hover {
+  background-color: #e0e0e2;
+}
+
+/* text css */
+.mutho-car-text-primary {
+  color: #025080;
+}
+
+.mutho-car-text-secondary {
+  background-color: #79a0ff;
+}
+
+.mutho-car-text-orange {
+  background: #ff9245;
+}
+
+.mutho-car-text-light {
+  background-color: #f9f9fb;
+}
+
+/* border */
+
+.mutho-car-border-primary {
+  border: 1px solid #05448d !important;
+}
+
+.mutho-car-shadow-primary {
+  box-shadow: 0px 10px 24px 0px rgba(5, 68, 141, 0.2);
+}
+.mutho-car-shadow-secondary {
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+}
+
+.mutho-car-shadow-sm {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.mutho-car-shadow-md {
+  box-shadow: 2px 4px 12px rgb(0 0 0/8%);
+}
+
+.previous-btn {
+  background: none;
+  padding-left: 0;
+}
+
+.mutho-car-text-black {
+  color: #333 !important;
+}
+
+/* custom check box */
+.cbx {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #9098a9;
+  transition: all 0.2s ease;
+}
+.cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #506eec;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.cbx span:last-child {
+  padding-left: 8px;
+}
+.cbx:hover span:first-child {
+  border-color: #506eec;
+}
+
+.inp-cbx:checked + .cbx span:first-child {
+  background: #506eec;
+  border-color: #506eec;
+  animation: wave 0.4s ease;
+}
+.inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+/* unchek mark */
+.inp-cbx:not(:checked) + .cbx span:first-child svg {
+  stroke-dashoffset: 16px;
+}
+
+.inp-cbx:not(:checked) + .cbx span:first-child:before {
+  transform: scale(1);
+  opacity: 1;
+  background: transparent;
+  transition: all 0.6s ease;
+}
+
+/* Animation for hover on unchecked state */
+.inp-cbx:not(:checked) + .cbx:hover span:first-child {
+  border-color: #506eec;
+}
