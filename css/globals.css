@@ -132,6 +132,18 @@
   transition: all 0.6s ease;
 }
 
+.select2-container .select2-selection--single {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.select2-selection__arrow {
+  margin-top: 8px;
+  margin-right: 12px;
+}
+
 @keyframes wave {
   50% {
     transform: scale(0.9);

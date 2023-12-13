@@ -980,7 +980,7 @@
                         class="position-relative cursor-pointer text-center d-inline-block"
                       >
                         <img
-                          src="../images/logo/bus-1.png"
+                          src="../images/logo/minibus-1.png"
                           alt="car"
                           style="background: #d9d9d9"
                           class="rounded-3 d-inline-block px-5 mx-2 py-1"
@@ -1043,81 +1043,120 @@
                         aria-labelledby="othersVehiclesTypes"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body px-1">
+                        <div class="accordion-body p-0">
                           <!-- Search box -->
+                          <!-- select -->
+
                           <div
-                            class="buy-sell-search-box position-relative mt-4"
+                            class="mt-3 d-flex justify-content-center align-items-center border w-100"
+                            style="
+                              border: 1px solid #05448d !important;
+                              border-radius: 5px;
+                              overflow: hidden;
+                            "
                           >
-                            <input
-                              type="search"
-                              name=""
-                              class="p-2 rounded-5 px-4 mutho-car-border-primary"
-                              id=""
-                              style="position: static"
-                            />
-                            <span class="p-2 px-3 cursor-pointer"
-                              ><i
+                            <select
+                              id="mostPopularVehiclesType"
+                              class="mostPopularVehiclesType w-100 h-100"
+                              style="
+                                width: 100%;
+                                box-sizing: border-box;
+                                height: 100%;
+                              "
+                            >
+                              <option value="Sedan">Sedan</option>
+                              <option value="SUV">
+                                SUV (Sport Utility Vehicle)
+                              </option>
+                              <option value="Truck">Truck</option>
+                              <option value="Hatchback">Hatchback</option>
+                              <option value="Crossover">Crossover</option>
+                              <option value="Coupe">Coupe</option>
+                              <option value="Convertible">Convertible</option>
+                              <option value="Minivan">Minivan</option>
+                              <option value="Van">Van</option>
+                              <option value="Motorcycle">Motorcycle</option>
+                              <option value="Electric Vehicle (EV)">
+                                Electric Vehicle (EV)
+                              </option>
+                              <option value="Hybrid Vehicle">
+                                Hybrid Vehicle
+                              </option>
+                              <option value="Pickup Truck">Pickup Truck</option>
+                              <option value="Station Wagon">
+                                Station Wagon
+                              </option>
+                              <option value="Compact Car">Compact Car</option>
+                              <option value="Luxury Car">Luxury Car</option>
+                              <option value="Sports Car">Sports Car</option>
+                              <option value="RV (Recreational Vehicle)">
+                                RV (Recreational Vehicle)
+                              </option>
+                              <option value="Bus">Bus</option>
+                              <option value="ATV (All-Terrain Vehicle)">
+                                ATV (All-Terrain Vehicle)
+                              </option>
+                              <option value="Limousine">Limousine</option>
+                              <option value="3-Wheeler">3-Wheeler</option>
+                              <option value="Moped">Moped</option>
+                              <option value="Classic Car">Classic Car</option>
+                              <option value="Subcompact Car">
+                                Subcompact Car
+                              </option>
+                              <option value="Performance Car">
+                                Performance Car
+                              </option>
+                              <option value="Armored Car">Armored Car</option>
+                              <option value="Off-Road Vehicle">
+                                Off-Road Vehicle
+                              </option>
+                              <option value="Compact SUV">Compact SUV</option>
+                              <option value="Midsize SUV">Midsize SUV</option>
+                              <option value="Full-Size SUV">
+                                Full-Size SUV
+                              </option>
+                              <option value="Compact Pickup Truck">
+                                Compact Pickup Truck
+                              </option>
+                              <option value="Full-Size Pickup Truck">
+                                Full-Size Pickup Truck
+                              </option>
+                              <option value="Commercial Truck">
+                                Commercial Truck
+                              </option>
+                              <option value="Fire Truck">Fire Truck</option>
+                              <option value="Ambulance">Ambulance</option>
+                              <option value="Tow Truck">Tow Truck</option>
+                              <option value="Utility Vehicle">
+                                Utility Vehicle
+                              </option>
+                              <option value="Compact RV">Compact RV</option>
+                              <option value="Class A Motorhome">
+                                Class A Motorhome
+                              </option>
+                              <option value="Class B Motorhome">
+                                Class B Motorhome
+                              </option>
+                              <option value="Class C Motorhome">
+                                Class C Motorhome
+                              </option>
+                              <option value="Hovercraft">Hovercraft</option>
+                              <option value="Jet Ski">Jet Ski</option>
+                              <option value="Snowmobile">Snowmobile</option>
+                              <option value="Golf Cart">Golf Cart</option>
+                              <option value="Skateboard">Skateboard</option>
+                            </select>
+                            <label
+                              class="ml-auto labelRegistrationYear"
+                              style="width: 124px; background-color: #05448d"
+                            >
+                              <i
                                 class="fa-solid fa-magnifying-glass text-white"
                               ></i
-                            ></span>
+                            ></label>
                           </div>
 
-                          <!-- Most popular Vehicles Type -->
-                          <ul class="mt-3 popular-vehicles-type">
-                            <p class="text-capitalize" style="font-weight: 500">
-                              Most popular Vehicles Type
-                            </p>
-                            <li>Sedan</li>
-                            <li>SUV (Sport Utility Vehicle)</li>
-                            <li>Truck</li>
-                            <li>Hatchback</li>
-                            <li>Crossover</li>
-                            <li>Coupe</li>
-                            <li>Convertible</li>
-                            <li>Minivan</li>
-                            <li>Van</li>
-                            <li>Motorcycle</li>
-                            <li>Electric Vehicle (EV)</li>
-                            <li>Hybrid Vehicle</li>
-                            <li>Pickup Truck</li>
-                            <li>Station Wagon</li>
-                            <li>Compact Car</li>
-                            <li>Luxury Car</li>
-                            <li>Sports Car</li>
-                            <li>RV (Recreational Vehicle)</li>
-                            <li>Bus</li>
-                            <li>ATV (All-Terrain Vehicle)</li>
-                            <li>Limousine</li>
-                            <li>3-Wheeler</li>
-                            <li>Moped</li>
-                            <li>Classic Car</li>
-                            <li>Subcompact Car</li>
-                            <li>Performance Car</li>
-                            <li>Armored Car</li>
-                            <li>Off-Road Vehicle</li>
-                            <li>Compact SUV</li>
-                            <li>Midsize SUV</li>
-                            <li>Full-Size SUV</li>
-                            <li>Compact Pickup Truck</li>
-                            <li>Full-Size Pickup Truck</li>
-                            <li>Commercial Truck</li>
-                            <li>Fire Truck</li>
-                            <li>Ambulance</li>
-                            <li>Tow Truck</li>
-                            <li>Utility Vehicle</li>
-                            <li>Compact RV</li>
-                            <li>Class A Motorhome</li>
-                            <li>Class B Motorhome</li>
-                            <li>Class C Motorhome</li>
-                            <li>Hovercraft</li>
-                            <li>Jet Ski</li>
-                            <li>Snowmobile</li>
-                            <li>Golf Cart</li>
-                            <li>Skateboard</li>
-                          </ul>
-
                           <!-- other car title -->
-
                           <div
                             class="year-picker mt-3 d-flex justify-content-center align-items-center border"
                             style="
@@ -1143,11 +1182,6 @@
                     </div>
                   </div>
 
-                  <!-- <div class="text-end mt-3">
-                    <button class="next-btn" style="color: #ddd">
-                      Next <img src="../images/logo/next-1.png" alt="" />
-                    </button>
-                  </div> -->
                   <div
                     class="text-end mt-3 d-flex align-items-center justify-content-end"
                   >
@@ -1357,77 +1391,81 @@
                         aria-labelledby="othersVehiclesBrands"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body px-1">
-                          <!-- Search box -->
+                        <div class="accordion-body px-0">
                           <div
-                            class="buy-sell-search-box position-relative mt-4"
+                            class="mt-3 d-flex justify-content-center align-items-center border w-100"
+                            style="
+                              border: 1px solid #05448d !important;
+                              border-radius: 5px;
+                              overflow: hidden;
+                            "
                           >
-                            <input
-                              type="search"
-                              name=""
-                              class="p-2 rounded-5 px-4 mutho-car-border-primary"
-                              id=""
-                              style="position: static"
-                            />
-                            <span class="p-2 px-3 cursor-pointer"
-                              ><i
+                            <select
+                              id="mostPopularVehiclesBrand"
+                              class="mostPopularVehiclesBrand w-100 h-100"
+                              style="
+                                width: 100%;
+                                box-sizing: border-box;
+                                height: 100%;
+                              "
+                            >
+                              <option value="Toyota">Toyota</option>
+                              <option value="Volkswagen">Volkswagen</option>
+                              <option value="Ford">Ford</option>
+                              <option value="Chevrolet">Chevrolet</option>
+                              <option value="Honda">Honda</option>
+                              <option value="Nissan">Nissan</option>
+                              <option value="BMW">BMW</option>
+                              <option value="Mercedes-Benz">
+                                Mercedes-Benz
+                              </option>
+                              <option value="Audi">Audi</option>
+                              <option value="Hyundai">Hyundai</option>
+                              <option value="Kia">Kia</option>
+                              <option value="Volvo">Volvo</option>
+                              <option value="Subaru">Subaru</option>
+                              <option value="Mazda">Mazda</option>
+                              <option value="Jeep">Jeep</option>
+                              <option value="Lexus">Lexus</option>
+                              <option value="Porsche">Porsche</option>
+                              <option value="Land Rover">Land Rover</option>
+                              <option value="Jaguar">Jaguar</option>
+                              <option value="Tesla">Tesla</option>
+                              <option value="Ferrari">Ferrari</option>
+                              <option value="Lamborghini">Lamborghini</option>
+                              <option value="Rolls-Royce">Rolls-Royce</option>
+                              <option value="Bentley">Bentley</option>
+                              <option value="Cadillac">Cadillac</option>
+                              <option value="Infiniti">Infiniti</option>
+                              <option value="Acura">Acura</option>
+                              <option value="Alfa Romeo">Alfa Romeo</option>
+                              <option value="Maserati">Maserati</option>
+                              <option value="Mini">Mini</option>
+                              <option value="Buick">Buick</option>
+                              <option value="GMC">GMC</option>
+                              <option value="Chrysler">Chrysler</option>
+                              <option value="Dodge">Dodge</option>
+                              <option value="RAM">RAM</option>
+                              <option value="Lincoln">Lincoln</option>
+                              <option value="Smart">Smart</option>
+                              <option value="Suzuki">Suzuki</option>
+                              <option value="Maybach">Maybach</option>
+                              <option value="Genesis">Genesis</option>
+                              <option value="McLaren">McLaren</option>
+                              <option value="Lotus">Lotus</option>
+                              <option value="Aston Martin">Aston Martin</option>
+                              <option value="Bugatti">Bugatti</option>
+                              <option value="Koenigsegg">Koenigsegg</option>
+                            </select>
+                            <label
+                              class="ml-auto labelRegistrationYear"
+                              style="width: 124px; background-color: #05448d"
+                            >
+                              <i
                                 class="fa-solid fa-magnifying-glass text-white"
                               ></i
-                            ></span>
+                            ></label>
                           </div>
-
-                          <!-- Most popular Vehicles Type -->
-                          <ul class="mt-3 popular-vehicles-type">
-                            <p class="text-capitalize" style="font-weight: 500">
-                              Most popular Vehicles Brand
-                            </p>
-                            <li>Toyota</li>
-                            <li>Volkswagen</li>
-                            <li>Ford</li>
-                            <li>Chevrolet</li>
-                            <li>Honda</li>
-                            <li>Nissan</li>
-                            <li>BMW</li>
-                            <li>Mercedes-Benz</li>
-                            <li>Audi</li>
-                            <li>Hyundai</li>
-                            <li>Kia</li>
-                            <li>Volvo</li>
-                            <li>Subaru</li>
-                            <li>Mazda</li>
-                            <li>Jeep</li>
-                            <li>Lexus</li>
-                            <li>Porsche</li>
-                            <li>Land Rover</li>
-                            <li>Jaguar</li>
-                            <li>Tesla</li>
-                            <li>Ferrari</li>
-                            <li>Lamborghini</li>
-                            <li>Rolls-Royce</li>
-                            <li>Bentley</li>
-                            <li>Cadillac</li>
-                            <li>Infiniti</li>
-                            <li>Acura</li>
-                            <li>Alfa Romeo</li>
-                            <li>Maserati</li>
-                            <li>Mini</li>
-                            <li>Buick</li>
-                            <li>GMC</li>
-                            <li>Chrysler</li>
-                            <li>Dodge</li>
-                            <li>RAM</li>
-                            <li>Subaru</li>
-                            <li>Lincoln</li>
-                            <li>Smart</li>
-                            <li>Suzuki</li>
-                            <li>Maybach</li>
-                            <li>Genesis</li>
-                            <li>McLaren</li>
-                            <li>Lotus</li>
-                            <li>Aston Martin</li>
-                            <li>Bugatti</li>
-                            <li>Koenigsegg</li>
-                          </ul>
 
                           <!-- other car title -->
                           <div
@@ -1609,77 +1647,82 @@
                         aria-labelledby="othersVehiclesBrands"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body px-1">
+                        <div class="accordion-body px-0">
                           <!-- Search box -->
                           <div
-                            class="buy-sell-search-box position-relative mt-4"
+                            class="mt-3 d-flex justify-content-center align-items-center border w-100"
+                            style="
+                              border: 1px solid #05448d !important;
+                              border-radius: 5px;
+                              overflow: hidden;
+                            "
                           >
-                            <input
-                              type="search"
-                              name=""
-                              class="p-2 rounded-5 px-4 mutho-car-border-primary"
-                              id=""
-                              style="position: static"
-                            />
-                            <span class="p-2 px-3 cursor-pointer"
-                              ><i
+                            <select
+                              id="mostPopularVehiclesTitle"
+                              class="mostPopularVehiclesTitle w-100 h-100"
+                              style="
+                                width: 100%;
+                                box-sizing: border-box;
+                                height: 100%;
+                              "
+                            >
+                              <option value="Toyota">Toyota</option>
+                              <option value="Volkswagen">Volkswagen</option>
+                              <option value="Ford">Ford</option>
+                              <option value="Chevrolet">Chevrolet</option>
+                              <option value="Honda">Honda</option>
+                              <option value="Nissan">Nissan</option>
+                              <option value="BMW">BMW</option>
+                              <option value="Mercedes-Benz">
+                                Mercedes-Benz
+                              </option>
+                              <option value="Audi">Audi</option>
+                              <option value="Hyundai">Hyundai</option>
+                              <option value="Kia">Kia</option>
+                              <option value="Volvo">Volvo</option>
+                              <option value="Subaru">Subaru</option>
+                              <option value="Mazda">Mazda</option>
+                              <option value="Jeep">Jeep</option>
+                              <option value="Lexus">Lexus</option>
+                              <option value="Porsche">Porsche</option>
+                              <option value="Land Rover">Land Rover</option>
+                              <option value="Jaguar">Jaguar</option>
+                              <option value="Tesla">Tesla</option>
+                              <option value="Ferrari">Ferrari</option>
+                              <option value="Lamborghini">Lamborghini</option>
+                              <option value="Rolls-Royce">Rolls-Royce</option>
+                              <option value="Bentley">Bentley</option>
+                              <option value="Cadillac">Cadillac</option>
+                              <option value="Infiniti">Infiniti</option>
+                              <option value="Acura">Acura</option>
+                              <option value="Alfa Romeo">Alfa Romeo</option>
+                              <option value="Maserati">Maserati</option>
+                              <option value="Mini">Mini</option>
+                              <option value="Buick">Buick</option>
+                              <option value="GMC">GMC</option>
+                              <option value="Chrysler">Chrysler</option>
+                              <option value="Dodge">Dodge</option>
+                              <option value="RAM">RAM</option>
+                              <option value="Lincoln">Lincoln</option>
+                              <option value="Smart">Smart</option>
+                              <option value="Suzuki">Suzuki</option>
+                              <option value="Maybach">Maybach</option>
+                              <option value="Genesis">Genesis</option>
+                              <option value="McLaren">McLaren</option>
+                              <option value="Lotus">Lotus</option>
+                              <option value="Aston Martin">Aston Martin</option>
+                              <option value="Bugatti">Bugatti</option>
+                              <option value="Koenigsegg">Koenigsegg</option>
+                            </select>
+                            <label
+                              class="ml-auto labelRegistrationYear"
+                              style="width: 124px; background-color: #05448d"
+                            >
+                              <i
                                 class="fa-solid fa-magnifying-glass text-white"
                               ></i
-                            ></span>
+                            ></label>
                           </div>
-
-                          <!-- Most popular Vehicles Type -->
-                          <ul class="mt-3 popular-vehicles-type">
-                            <p class="text-capitalize" style="font-weight: 500">
-                              Most popular Vehicles title
-                            </p>
-                            <li>Toyota</li>
-                            <li>Volkswagen</li>
-                            <li>Ford</li>
-                            <li>Chevrolet</li>
-                            <li>Honda</li>
-                            <li>Nissan</li>
-                            <li>BMW</li>
-                            <li>Mercedes-Benz</li>
-                            <li>Audi</li>
-                            <li>Hyundai</li>
-                            <li>Kia</li>
-                            <li>Volvo</li>
-                            <li>Subaru</li>
-                            <li>Mazda</li>
-                            <li>Jeep</li>
-                            <li>Lexus</li>
-                            <li>Porsche</li>
-                            <li>Land Rover</li>
-                            <li>Jaguar</li>
-                            <li>Tesla</li>
-                            <li>Ferrari</li>
-                            <li>Lamborghini</li>
-                            <li>Rolls-Royce</li>
-                            <li>Bentley</li>
-                            <li>Cadillac</li>
-                            <li>Infiniti</li>
-                            <li>Acura</li>
-                            <li>Alfa Romeo</li>
-                            <li>Maserati</li>
-                            <li>Mini</li>
-                            <li>Buick</li>
-                            <li>GMC</li>
-                            <li>Chrysler</li>
-                            <li>Dodge</li>
-                            <li>RAM</li>
-                            <li>Subaru</li>
-                            <li>Lincoln</li>
-                            <li>Smart</li>
-                            <li>Suzuki</li>
-                            <li>Maybach</li>
-                            <li>Genesis</li>
-                            <li>McLaren</li>
-                            <li>Lotus</li>
-                            <li>Aston Martin</li>
-                            <li>Bugatti</li>
-                            <li>Koenigsegg</li>
-                          </ul>
 
                           <!-- other car title -->
                           <div
@@ -3023,6 +3066,9 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <!-- muthoCar-multiple-form -->
     <script src="../js/ManufactureAndRegYears.js"></script>
+    <script src="../js/ManufactureAndRegYears.js"></script>
+    <!-- most popular vehicles type brand & title selection -->
+    <script src="../js/mostPopularVehicles.js"></script>
     <script src="../js/muthoCar-multiple-form.js"></script>
     <!-- our script -->
     <script src="../js/script.js"></script>

@@ -52,6 +52,33 @@ document.querySelectorAll(".previous-btn").forEach((btn) => {
 });
 //  previous step close
 
+
+const searchInput = document.getElementById('vehicleSearchInput');
+const vehicleList = document.querySelector('.popular-vehicles-type');
+const vehicles = vehicleList.getElementsByTagName('li');
+
+// Add event listener for input change
+searchInput.addEventListener('input', function (event) {
+  const searchInputValue = event.target.value.toLowerCase();
+
+  // Loop through all list items and hide/show based on search query
+  Array.from(vehicles).forEach(function (vehicle) {
+    const text = vehicle.textContent.toLowerCase();
+    if (text.includes(searchInputValue)) {
+      vehicle.style.display = 'block';
+    } else {
+      vehicle.style.display = 'none';
+    }
+  });
+});
+
+// Add click event listener to set text in input field on list item click
+Array.from(vehicles).forEach(function (vehicle) {
+  vehicle.addEventListener('click', function () {
+    searchInput.value = this.textContent.trim();
+  });
+});
+
 document
     .querySelector(".submit-btn")
     .addEventListener("click", submitForm);
